@@ -2,6 +2,9 @@ const a = parseFloat(prompt('Enter A'));
 const b = parseFloat(prompt('Enter B'));
 const c = parseFloat(prompt('Enter C'));
 
+const result = solveQuardEq(a, b, c);
+alert(result);
+
  function solveQuardEq(a, b, c) {
      const diskr = calcDiskr(a, b, c);
      if (diskr = 0) {
@@ -19,6 +22,8 @@ const c = parseFloat(prompt('Enter C'));
      
      
  }
+ 
+ return 'x1 = ' + x1 + ', x2 = ' + x2;
  
  function calcDiskr(a, b, c) {
      return b * b - 4 * a * c;
